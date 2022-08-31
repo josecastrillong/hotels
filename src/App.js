@@ -1,5 +1,7 @@
+import HotelCard from './Components/HotelCard';
+
 function App() {
-  return "Hola Mundo";
+  return <HotelCard />;
 }
 
 export default App;
