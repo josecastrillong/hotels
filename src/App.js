@@ -1,7 +1,7 @@
-import HotelCard from './Components/HotelCard';
+import Home from './Components/Pages/Home';
 
 function App() {
-  return <HotelCard />;
+  return <Home />;
 }
 
 export default App;
