@@ -1,10 +1,12 @@
 import Container from '@mui/material/Container';
 import NavBar from '../../NavBar';
+import HotelCard from '../../HotelCard';
 
 function Home() {
   return (
-    <Container maxWidth="sm">
+    <Container style={{ maxWidth: 1300 }}>
       <NavBar />
+      <HotelCard />
     </Container>
   );
 }
