@@ -4,7 +4,7 @@ import CharacterCardsContainer from '../../Components/CharactersCardContainer';
 
 function Home() {
   return (
-    <Container style={{ maxWidth: 1300 }}>
+    <Container fluid style={{ maxWidth: 1700 }}>
       <NavBar />
       <CharacterCardsContainer />
     </Container>

@@ -1,8 +1,7 @@
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import PropTypes from 'prop-types';
-import WarningIcon from '@mui/icons-material/Warning';
 import styles from './styles.module.css';
 
 function CharacterCard({ character }) {
@@ -18,7 +17,7 @@ function CharacterCard({ character }) {
   }
 
   return (
-    <Card sx={{ maxWidth: 700 }}>
+    <Card sx={{ minWidth: 538, maxWidth: 650, Height: 282 }}>
       <Grid container direction="row" spacing={2}>
         <Grid item xs={12} sm={5}>
           <CardMedia component="img" alt="green iguana" image={character.image} />
@@ -29,9 +28,10 @@ function CharacterCard({ character }) {
               <h3>{character.name}</h3>
               <p>{character.location.name}</p>
             </Grid>
-            <Grid item xs={6} direction="row" justify="flex-end">
-              <WarningIcon />
-              <div className={statusClass}> {character.status}</div>
+            <Grid item>
+              <Box m={1} p={1} className={statusClass}>
+                {status}
+              </Box>
             </Grid>
           </Grid>
           <Grid container direction="row">
