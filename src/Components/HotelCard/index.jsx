@@ -9,7 +9,7 @@ function HotelCard({ hotel }) {
   const { name, address, guestReviews, optimizedThumbUrls, ratePlan } = hotel;
 
   return (
-    <Card sx={{ minWidth: 600, maxWidth: 700, Height: 282 }}>
+    <Card sx={{ width: { md: 750 } }}>
       <Grid container direction="row" spacing={2}>
         <Grid item xs={12} sm={5}>
           <CardMedia

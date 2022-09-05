@@ -145,9 +145,9 @@ function HotelsContainer() {
           <p>No hay hoteles que coincidan con tu busqueda</p>
         </Box>
       ) : (
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={3} justifyContent="center">
           {hotels.map((hotel) => (
-            <Grid item py={2} p={3} key={hotel.id}>
+            <Grid item py={3} px={5} key={hotel.id}>
               <HotelCard hotel={hotel} />
             </Grid>
           ))}
