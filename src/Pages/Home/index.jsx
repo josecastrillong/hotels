@@ -4,7 +4,7 @@ import HotelsContainer from '../../Components/HotelsContainer';
 
 function Home() {
   return (
-    <Container fluid style={{ maxWidth: 1700 }}>
+    <Container fluid style={{ maxWidth: 1700 }} sx={{ height: '100vh' }}>
       <NavBar />
       <HotelsContainer />
     </Container>
