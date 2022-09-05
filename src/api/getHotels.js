@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const baseURL = 'https://hotels4.p.rapidapi.com/properties/list';
-
+const APIKEY = process.env.REACT_APP_API_KEY;
 const config = {
   headers: {
-    'X-RapidAPI-Key': '0276cb07cbmsh718d4394af8036cp1c5e25jsn585535c5a6b2',
+    'X-RapidAPI-Key': APIKEY,
     'X-RapidAPI-Host': 'hotels4.p.rapidapi.com',
   },
 };
