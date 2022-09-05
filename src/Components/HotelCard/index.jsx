@@ -35,7 +35,7 @@ function HotelCard({ hotel }) {
               <p className={styles.reimbursement}>Totalmente reembolsable</p>
               <p>Acumula sellos</p>
               <p>
-                <strong>{`${guestReviews.rating}/5`}</strong>
+                <strong>{`${guestReviews.rating}/10`}</strong>
                 {` (${guestReviews.total} opiniones)`}
               </p>
             </Grid>
