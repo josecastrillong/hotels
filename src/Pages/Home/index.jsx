@@ -1,12 +1,12 @@
 import Container from '@mui/material/Container';
 import NavBar from '../../Components/NavBar';
-import CharacterCardsContainer from '../../Components/CharactersCardContainer';
+import HotelsContainer from '../../Components/HotelsContainer';
 
 function Home() {
   return (
     <Container fluid style={{ maxWidth: 1700 }}>
       <NavBar />
-      <CharacterCardsContainer />
+      <HotelsContainer />
     </Container>
   );
 }
